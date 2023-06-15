@@ -2,6 +2,9 @@ Insights from Failed Orders
 Download Datasets
 This data project has been used as a take-home assignment in the recruitment process for the data science positions at Gett.
 Gett, previously known as GetTaxi, is an Israeli-developed technology platform solely focused on corporate Ground Transportation Management (GTM). They have an application where clients can order taxis, and drivers can accept their rides (offers). At the moment, when the client clicks the Order button in the application, the matching system searches for the most relevant drivers and offers them the order. In this task, we would like to investigate some matching metrics for orders that did not complete successfully, i.e., the customer didn't end up getting a car.
+
+
+
 Assignment
 Please complete the following tasks.
 1.	Build up distribution of orders according to reasons for failure: cancellations before and after driver assignment, and reasons for order rejection. Analyse the resulting plot. Which category has the highest number of orders?
@@ -9,6 +12,9 @@ Please complete the following tasks.
 3.	Plot the average time to cancellation with and without driver, by the hour. If there are any outliers in the data, it would be better to remove them. Can we draw any conclusions from this plot?
 4.	Plot the distribution of average ETA by hours. How can this plot be explained?
 5.	BONUS Hexagons. Using the h3 and folium packages, calculate how many sizes 8 hexes contain 80% of all orders from the original data sets and visualise the hexes, colouring them by the number of fails on the map.
+
+
+
 Data Description
 We have two data sets: data_orders and data_offers, both being stored in a CSV format. The data_orders data set contains the following columns:
 •	order_datetime - time of the order
@@ -24,6 +30,10 @@ o	9 - cancelled by system, i.e., a reject
 The data_offers data set is a simple map with 2 columns:
 •	order_gk - order number, associated with the same column from the orders data set
 •	offer_id - ID of an offer
+
+
+
+
 Practicalities
 Make sure that the solution reflects your entire thought process including the preparation of data - it is more important how the code is structured rather than just the final result or plot.
 
